@@ -1,0 +1,119 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(50% - 20px);
+    max-width: 300px;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+    background-color: #0056b3;
+}
+
+.tutorial {
+    margin-top: 20px;
+}
+
+.tutorial h2 {
+    margin-top: 0;
+}
+
+.tutorial p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px; /* 减少容器的左右内边距 */
+    }
+    .card {
+        width: 100%; /* 卡片宽度改为100% */
+        margin-bottom: 20px; /* 增加卡片之间的间距 */
+    }
+}
+
+/* 移动优先 */
+.card a {
+    padding: 12px 20px; /* 增大链接的内边距 */
+    font-size: 16px; /* 增大链接的字体大小 */
+}
+
+/* 图像优化 */
+img {
+    max-width: 100%; /* 图像最大宽度不超过容器宽度 */
+    height: auto; /* 图像高度自适应 */
+}
+
+/* 字体大小 */
+body {
+    font-size: 16px; /* 设置基本字体大小 */
+}
+
+/* 触摸友好 */
+a, button {
+    min-width: 120px; /* 增大可点击元素的最小宽度 */
+    padding: 12px 20px; /* 增大可点击元素的内边距 */
+    font-size: 16px; /* 增大可点击元素的字体大小 */
+}
